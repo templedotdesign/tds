@@ -1,0 +1,145 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.box {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--brand-color);
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Raleway'
+}
+
+.banner a {
+  margin-top: 25px;
+  color: inherit;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-width: 3px;
+  border-style: solid;
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+}
+
+.banner a:hover {
+  padding: 15px 50px;
+}
+
+.leftIcon, .rightIcon {
+  position: absolute;
+  bottom: 10px;
+  font-size: 3em;
+}
+
+.leftIcon {
+  left: calc(50% - 50px);
+  transform: translateX(-50%);
+  /* transform: rotateY(180deg); */
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+.hiddenLeft {
+  left: calc(0% - 100px);
+}
+
+.rightIcon {
+  left: calc(50% + 50px);
+  transform: translateX(-50%);
+  color: var(--brand-color);
+  transition: all .3s ease-in-out;
+}
+
+.hiddenRight {
+  left: calc(100% + 100px);
+}
+
+.statement {
+  background-color: var(--brand-color);
+  color: white;
+  padding: 100px 50px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.services {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--dark-color);
+  background-color: white;
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 5px 5px #bbb;
+  transition: all .3s ease-in-out;
+  /* transform: rotateY(0deg); */
+}
+
+.card h3 {
+  font-size: 2em;  
+  margin: 20px 0;
+  color: var(--brand-color);
+}
+
+.card:hover {
+  box-shadow: 6px 10px 5px #bbb;
+  /* transform: rotateY(180deg);   */
+}
+
+
+.icon {
+  font-size: 5em;
+}
+
+.card p {
+  color: var(--dark-color);
+}
+
+@media(max-width: 750px) {
+  .brand {
+    font-size: 1em;
+  }
+
+  .statement {
+    padding: 100px 10px;
+  }
+
+  .content {
+    font-size: 1.3em;
+  }
+
+  .services {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 95%;
+    margin: 10px 0;
+  }
+}

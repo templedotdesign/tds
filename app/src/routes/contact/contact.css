@@ -1,0 +1,43 @@
+.contact {
+  padding: 120px 30vw 0 30vw;
+  min-height: calc(100vh);  
+}
+
+.cardsWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contactCard {
+  height: 18vw;
+  width: 18vw;
+  border: 1px solid var(--brand-color);
+  border-radius: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7em;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  color: var(--brand-color);  
+}
+
+.contactCard:hover {
+  background-color: var(--brand-color);
+  color: white;
+}
+
+.flavorText {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}

@@ -1,0 +1,62 @@
+.popNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  padding: 10px 50px;
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menuButton {
+  color: white;
+  font-size: 2.3em;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.navIcons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navIcon {
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  color: white;
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transform: translateX(0);
+  transition: all .5s ease-in-out;
+}
+
+.currentLink {
+  color: white;
+  opacity: 1;
+  transition: all .3s ease-in-out; 
+}
+
+.invisible {
+  opacity: 0;
+  transition: all .3s ease-in-out; 
+}
+
+.hidden {
+  transform: translateX(70vw);
+}
+
